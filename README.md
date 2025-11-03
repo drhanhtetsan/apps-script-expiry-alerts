@@ -55,13 +55,5 @@ Inside `Code.gs` (or your existing `Code_Version3.gs`):
 - Change sheet names, threshold, or recipient in the `config` object.
 - Add more sheets simply by appending to the `sheetNames` array.
 
-## Banner image
-- Upload your image as `assets/email_alerts_banner.png` in this repository (GitHub → Add file → Upload files) and the banner above will render automatically.
-- If you prefer plain Markdown instead of the centered HTML block, replace it with:
-
-```
-![Email Alerts for Items Expiring Soon in Google Sheets (Food/Medicine) using Apps Script](assets/email_alerts_banner.png)
-```
-
 ## License
 Prosperity Public License 3.0.0 — noncommercial use permitted; commercial use requires a separate license from the author. See [LICENSE](./LICENSE) for full terms.
