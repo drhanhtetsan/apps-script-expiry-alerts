@@ -61,4 +61,4 @@ Inside `Code.gs` (or your existing `Code_Version3.gs`):
 - Add more sheets simply by appending to the `sheetNames` array.
 
 ## License
-Prosperity Public License 3.0.0 — noncommercial use permitted; commercial use requires a separate license from the author. See [LICENSE](./LICENSE) for full terms.
+Prosperity Public License 3.0.0 — noncommercial use permitted; commercial use requires a separate license from the author. See [LICENSE](./LICENSE.txt) for full terms.
