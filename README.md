@@ -56,7 +56,7 @@ Inside `Code.gs` (or your existing `Code_Version3.gs`):
 - Add more sheets simply by appending to the `sheetNames` array.
 
 ## Banner image
-- Upload your image as `assets/banner.png` in this repository (GitHub → Add file → Upload files) and the banner above will render automatically.
+- Upload your image as `assets/email_alerts_banner.png` in this repository (GitHub → Add file → Upload files) and the banner above will render automatically.
 - If you prefer plain Markdown instead of the centered HTML block, replace it with:
 
 ```
@@ -64,4 +64,4 @@ Inside `Code.gs` (or your existing `Code_Version3.gs`):
 ```
 
 ## License
-MIT — see [LICENSE](./LICENSE_Version3.txt).
+Prosperity Public License 3.0.0 — noncommercial use permitted; commercial use requires a separate license from the author. See [LICENSE](./LICENSE) for full terms.
