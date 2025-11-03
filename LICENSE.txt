@@ -1,21 +1,21 @@
-MIT License
+Prosperity Public License 3.0.0
 
-Copyright (c) 2025 Han Htet San
+The Prosperity Public License 3.0.0 is a source-available software license
+that permits noncommercial use and requires a separate commercial license
+for commercial use.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+For the complete, canonical license text, see:
+https://prosperitylicense.com/versions/3.0.0
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+Contributor: Han Htet San
+Source Code: https://github.com/ubagyan/apps-script-expiry-alerts
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Summary (not a substitute for the license):
+- You may use, copy, modify, and share this software for noncommercial purposes.
+- “Noncommercial” means not intended for or directed toward commercial advantage
+  or monetary compensation.
+- Commercial use requires a separate commercial license from the Licensor.
+- THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
+
+To use the full text directly:
+curl -L https://prosperitylicense.com/versions/3.0.0.txt -o LICENSE
