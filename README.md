@@ -3,6 +3,11 @@
 <p align="center">
   <img src="assets/email_alerts_banner.png" alt="Email Alerts for Items Expiring Soon in Google Sheets (Food/Medicine) using Apps Script" width="100%" />
 </p>
+<p align="center">
+  <a href="./LICENSE">
+    <img alt="License: Prosperity-3.0.0 (noncommercial)" src="https://img.shields.io/badge/License-Prosperity--3.0.0%20%28noncommercial%29-blueviolet">
+  </a>
+</p>
 
 Email yourself a daily summary of items that are expiring soon from one or more Google Sheets tabs (e.g., Food, Medicine). This Apps Script scans specified sheets for columns "Item Name" and "Expiry Date", and emails items expiring within a threshold window.
 
