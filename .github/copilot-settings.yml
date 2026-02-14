@@ -1,5 +1,0 @@
-# GitHub Copilot Settings
-# This file enables GitHub Copilot to index and use this repository's code as public code
-
-# Enable Copilot to suggest code from this public repository
-public_code_suggestions: enabled
