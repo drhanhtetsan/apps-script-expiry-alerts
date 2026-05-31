@@ -9,24 +9,35 @@
   </a>
 </p>
 
-Email yourself a daily summary of items that are expiring soon from one or more Google Sheets tabs (e.g., Food, Medicine). This Apps Script scans specified sheets for columns "Item Name" and "Expiry Date", and emails items expiring within a threshold window.
+## Portfolio Relevance
+
+This project supports my healthcare IT and clinical systems direction because it shows a practical automation workflow for medication and inventory safety. It uses a simple Google Sheet as the user interface, Apps Script as the automation layer, and Gmail as the notification channel.
+
+The project demonstrates the same skills needed in health informatics and clinical systems support: understanding workflow risk, reducing manual checking, documenting setup steps, and building reliable reminders around operational data.
+
+## Summary
+
+Email yourself a daily summary of items that are expiring soon from one or more Google Sheets tabs, such as `Food` and `Medicine`. This Apps Script scans specified sheets for `Item Name` and `Expiry Date`, then emails items expiring within a configurable threshold window.
 
 ## Features
-- Multiple sheet support (default: Food, Medicine)
-- Threshold window in days (default: 30)
-- Auto-detection of headers "Item Name" and "Expiry Date"
+
+- Multiple sheet support, defaulting to `Food` and `Medicine`
+- Configurable expiry threshold window
+- Auto-detection of `Item Name` and `Expiry Date` headers
 - Clean daily summary email
 - Optional daily time-based trigger helper
+- Lightweight, serverless workflow using Google Workspace tools
 
 ## Sheet Setup
-For each sheet you want to scan (default names: `Food`, `Medicine`):
-- Include a header row with at least:
-  - `Item Name`
-  - `Expiry Date` (must be valid dates or date-formatted cells)
+
+For each sheet you want to scan, include a header row with at least:
+
+- `Item Name`
+- `Expiry Date`
 
 Example:
 
-```
+```text
 | Item Name | Expiry Date |
 |-----------|-------------|
 | Milk      | 2025-12-05  |
@@ -34,31 +45,43 @@ Example:
 ```
 
 ## Configuration
-Inside `Code.gs` (or your existing `Code_Version3.gs`):
+
+Inside `Code.gs` or `Code_Version3.gs`:
+
 - `sheetNames`: array of sheet tabs to scan
-- `thresholdDays`: number of days ahead to include (e.g., 30)
+- `thresholdDays`: number of days ahead to include
 - `recipient`: defaults to the active user email via `Session.getActiveUser().getEmail()`
 
 ## Deployment
+
 1. Open your target Google Sheet.
-2. Extensions → Apps Script → Create a new project.
-3. Copy the contents of `Code.gs` (or `Code_Version3.gs`) into the editor and save.
-4. Click Run → Authorize the script (first run).
-5. Optional: create a trigger to run daily:
-   - Triggers → Add Trigger
-   - Choose function: `sendExpiryAlerts`
-   - Event source: Time-driven
-   - Type: Day timer, select hour, save
-   - Or run `createDailyTrigger()` once.
+2. Go to Extensions -> Apps Script.
+3. Create a new project.
+4. Copy the contents of `Code.gs` or `Code_Version3.gs` into the editor and save.
+5. Run the function and authorise the script on first use.
+6. Optional: create a time-driven trigger for `sendExpiryAlerts`, or run `createDailyTrigger()` once.
+
+## Healthcare IT Skills Demonstrated
+
+- Workflow automation
+- Medication and inventory safety thinking
+- Google Workspace support
+- User-facing documentation
+- Scheduled notification design
+- Low-code operational improvement
 
 ## Notes
-- The email is sent only if at least one sheet has items expiring within the threshold window.
-- The script ignores rows with invalid/missing dates or item names.
-- Dates are read from the sheet; ensure date formatting is consistent.
 
-## Customization
-- Change sheet names, threshold, or recipient in the `config` object.
-- Add more sheets simply by appending to the `sheetNames` array.
+- The email is sent only if at least one sheet has items expiring within the threshold window.
+- The script ignores rows with invalid or missing dates or item names.
+- Dates are read from the sheet; date formatting should be consistent.
+
+## Professional Links
+
+- Case study: https://hanhtetsan.me/tech-support/google-sheets-expiry-alerts-reduce-food-medicine-waste-with-google-apps-script-automation/
+- Portfolio: https://hanhtetsan.me/portfolio/
+- LinkedIn: https://uk.linkedin.com/in/han-san
 
 ## License
-Prosperity Public License 3.0.0 — noncommercial use permitted; commercial use requires a separate license from the author. See [LICENSE](./LICENSE.txt) for full terms.
+
+Prosperity Public License 3.0.0 - noncommercial use permitted; commercial use requires a separate license from the author. See [LICENSE](./LICENSE.txt) for full terms.
